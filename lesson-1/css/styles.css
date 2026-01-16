@@ -2,43 +2,89 @@
 
 /* STEP 1: Named Selector
 ------------------------------------------------------- */
-
+h2 {
+    color: red !important;
+    font-weight: normal;
+}
 
 /* STEP 2: ID Selector
 ------------------------------------------------------- */
-
+#special {
+    color: blue;
+}
 
 /* STEP 3: Class Selector
 ------------------------------------------------------- */
-
+.project {
+    background-color: lightgray;
+}
+.about {
+    border: 5px dashed black;
+}
 
 /* STEP 4: Contextual/Descendent Selector
 ------------------------------------------------------- */
-
-
+section p {
+    color: purple;
+}
+.about p a {
+    /*background-color: bisque;*/
+}
 /* STEP 5: Grouped Selector
 ------------------------------------------------------- */
-
+h1, 
+h2, 
+h3 {
+    font-family: sans-serif;
+}
 
 /* STEP 6: Pseudo-Class Selector
 ------------------------------------------------------- */
+a:link {
+    text-decoration: none;
+    color: brown;
+    background-color: transparent;
+}
+a:visited {
+    color: blue;
+}
+a:focus {
+    text-decoration: underline;
 
+}
+a:active {
+    color: red;
+}
 
 /* STEP 7: Structural Pseudo-Class Selector
 ------------------------------------------------------- */
-
+li:nth-child(3n-1) {
+    background-color: pink;
+}
 
 /* STEP 8: Pseudo-Element Selector
 ------------------------------------------------------- */
-
+p::first-line {
+    text-transform: capitalize;
+}
+p::first-letter {
+    font-size: 200%;
+}
 
 /* STEP 9: Combinator Selector
 ------------------------------------------------------- */
-
+h1 + p {
+    font-weight: bold;
+}
 
 /* STEP 10: Attribute Selector
 ------------------------------------------------------- */
-
+*[lang="es"] {
+    background-color: aqua;
+}
 
 /* STEP 11: Getting Crazy
 ------------------------------------------------------- */
+.project h2[lang="es"] + p em {
+    
+}
