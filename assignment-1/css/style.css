@@ -1,10 +1,12 @@
 @charset "UTF-8";
 
+/* Makes page take full height and removes default spacing */
 html, body {
     height: 100%;
     margin: 0;
-    overflow: hidden;
+    overflow: hidden; /*prevents scrolling*/
 }
+/* Background image for the whole page */
 html{ 
     background-image: url("../images/Background2-Wishbon.webp");
     background-repeat: no-repeat;
@@ -12,6 +14,7 @@ html{
     background-size: cover;
 }
 
+/* First image position*/
 img:nth-of-type(1){
     position: absolute;
     top: -5px;
@@ -19,6 +22,7 @@ img:nth-of-type(1){
     width: 100%;
 }
 
+/* Second image position */
 img:nth-of-type(2){
     position: absolute;
     top: 70px;
@@ -26,6 +30,7 @@ img:nth-of-type(2){
     /*width: 100%;*/
 }
 
+/* Third image position */
 img:nth-of-type(3){
     position: absolute;
     top: -25px;
@@ -33,6 +38,7 @@ img:nth-of-type(3){
     width: 2000px;
 }
 
+/* Fourth image position */
 img:nth-of-type(4){
     position: absolute;
     top: 80px;
@@ -41,6 +47,7 @@ img:nth-of-type(4){
     height: 1000;
 }
 
+/* Fifth image position */
 img:nth-of-type(5){
     position: absolute;
     top: -25px;
@@ -48,6 +55,7 @@ img:nth-of-type(5){
     width: 2000px;
 }
 
+/* Sixth image position */
 img:nth-of-type(6){
     position: absolute;
     top: -25px;
@@ -56,6 +64,7 @@ img:nth-of-type(6){
     height: 2300px;
 }
 
+/* Seventh image position */
 img:nth-of-type(7){
     position: absolute;
     top: -485px;
@@ -64,6 +73,7 @@ img:nth-of-type(7){
     height: 1700px;
 }
 
+/* Eighth image position */
 img:nth-of-type(8){
     position: absolute;
     top: -270px;
@@ -79,21 +89,25 @@ img:nth-of-type(8){
     transform: translateX(-50%);
 }*/
 
+/* Cookie font */
 @font-face {
     font-family: 'Cookie';
     src: url("../Cookie/Cookie-Regular.ttf");
 }
 
+/* Love font */
 @font-face {
     font-family: 'Love';
     src: url("../Love_Ya_Like_A_Sister/LoveYaLikeASister-Regular.ttf");
 }
 
+/* Qwitcher font */
 @font-face {
     font-family: 'Qwitcher';
     src: url("../Qwitcher_Grypen/QwitcherGrypen-Bold.ttf");
 }
 
+/* Header title */
 header, h1 {
 
     position: absolute;
@@ -106,6 +120,7 @@ header, h1 {
 
 }
 
+/* h3 text block bottom centered text quote top */
 h3 {
 
     position: absolute;
@@ -128,6 +143,7 @@ h3 {
     word-spacing: normal;
 }
 
+/* h4 text block quote middle*/
 h4 {
 
     position: absolute;
@@ -150,6 +166,7 @@ h4 {
     word-spacing: normal;
 }
 
+/* h5 text block quote end */
 h5 {
 
     position: absolute;
@@ -172,6 +189,7 @@ h5 {
     word-spacing: normal;
 }
 
+/* h6 text block artist text*/
 h6 {
 
     position: absolute;
@@ -195,6 +213,7 @@ h6 {
     word-spacing: 5px;
 }
 
+/* h7 text block message paragraph */
 h7 {
 
     font-weight: 2000;
@@ -219,6 +238,7 @@ h7 {
     word-spacing: 5px;
 }
 
+/* h8 text block lyrics*/
 h8 {
 
     position: absolute;
@@ -241,6 +261,7 @@ h8 {
     word-spacing: normal;
 }
 
+/* Styles both button and h2 bottom nauseous title*/
 button, h2 {
 
     position: absolute;
@@ -253,23 +274,13 @@ button, h2 {
 
     color: antiquewhite;
 
-    background: transparent;   /* no background */
-    border: none;              /* no border */
-    padding: 15px 40px;        /* keeps clickable area big */
+    background: transparent;   
+    border: none;              
+    padding: 15px 40px;        
     cursor: pointer;
 }  
 
+/* Changes color when hovering over button */
 button:hover {
-    color: rgb(228, 173, 55);   /* change to any color you want */
+    color: rgb(228, 173, 55); 
 }
-
-/*body {
-    position: relative;
-   
-    height: 1006px;
-    width: 1006px;
-    background-repeat: no-repeat;
-    background-position: ;
-    background-size: cover;
-    overflow: hidden;
-}*/
