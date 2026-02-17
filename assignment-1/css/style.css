@@ -35,8 +35,8 @@ img:nth-of-type(3){
 
 img:nth-of-type(4){
     position: absolute;
-    top: 175px;
-    left: 500px;
+    top: 80px;
+    left: 480px;
     width: 1000px;
     height: 1000;
 }
@@ -58,10 +58,10 @@ img:nth-of-type(6){
 
 img:nth-of-type(7){
     position: absolute;
-    top: -320px;
-    left: 570px;
-    width: 1200px;
-    height: 1060px;
+    top: -485px;
+    left: 1270px;
+    width: 850px;
+    height: 1700px;
 }
 
 img:nth-of-type(8){
@@ -109,7 +109,7 @@ header, h1 {
 h3 {
 
     position: absolute;
-    font-size: 400%;
+    font-size: 150%;
     letter-spacing: 0px;
     font-family: 'Love', sans-serif;
     color: antiquewhite;
@@ -118,8 +118,8 @@ h3 {
     width: 1150px;
     height: 390px;
     position: fixed;
-    top: 51%;
-    left: 62%;
+    top: 77%;
+    left: 15%;
     transform: translateX(-50%);
     padding: 60px;
     flex-direction: column;
@@ -131,7 +131,7 @@ h3 {
 h4 {
 
     position: absolute;
-    font-size: 400%;
+    font-size: 150%;
     letter-spacing: 0px;
     font-family: 'Love', sans-serif;
     color: antiquewhite;
@@ -140,8 +140,8 @@ h4 {
     width: 1150px;
     height: 390px;
     position: fixed;
-    top: 56%;
-    left: 62%;
+    top: 80%;
+    left: 15%;
     transform: translateX(-50%);
     padding: 60px;
     flex-direction: column;
@@ -153,17 +153,17 @@ h4 {
 h5 {
 
     position: absolute;
-    font-size: 400%;
+    font-size: 150%;
     letter-spacing: 0px;
     font-family: 'Love', sans-serif;
     color: antiquewhite;
     /*--------------------------------*/
 
-    width: 1150px;
+    width: 500px;
     height: 390px;
     position: fixed;
-    top: 61%;
-    left: 62%;
+    top: 83%;
+    left: 15%;
     transform: translateX(-50%);
     padding: 60px;
     flex-direction: column;
@@ -175,10 +175,10 @@ h5 {
 h6 {
 
     position: absolute;
-    font-size: 255%;
+    font-size: 250%;
     letter-spacing: 0px;
-    font-family: 'Qwitcher', sans-serif;
-    color: antiquewhite;
+    font-family: 'Cookie', sans-serif;
+    color: rgb(53, 10, 10);
     /*--------------------------------*/
 
     width: 380px;
@@ -197,39 +197,70 @@ h6 {
 
 h7 {
 
+    font-weight: 2000;
     position: absolute;
-    font-size: 255%;
-    letter-spacing: 0px;
-    font-family: 'Qwitcher', sans-serif;
-    color: antiquewhite;
+    font-size: 160%;
+    letter-spacing: 2px;
+    font-family: 'Cookie', sans-serif;
+    color: rgb(53, 10, 10);
     /*--------------------------------*/
 
-    width: 380px;
-    height: 390px;
+    width: 389px;
+    height: 300px;
     position: fixed;
-    top: 53%;
-    left: 14%;
+    top: 50%;
+    left: 80.5%;
     transform: translateX(-50%);
     padding: 60px;
     flex-direction: column;
-    /*text-align: center;*/
-    line-height: 0.9;
+    text-align: center;
+    line-height: 1.1;
     /*word-spacing: normal;*/
     word-spacing: 5px;
 }
 
-
-
-footer, h2 {
+h8 {
 
     position: absolute;
-    top: 457px;
-    left: 350px;
+    font-size: 140%;
+    letter-spacing: 0px;
+    font-family: 'Love', sans-serif;
+    color: antiquewhite;
+    /*--------------------------------*/
+
+    width: 610px;
+    height: 390px;
+    position: fixed;
+    top: 23%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 60px;
+    flex-direction: column;
+    text-align: center;
+    line-height: 1.3;
+    word-spacing: normal;
+}
+
+button, h2 {
+
+    position: absolute;
+    top: 470px;
+    left: 355px;
+
     font-size: 230%;
-    letter-spacing: 20px;
+    letter-spacing: 5px;
     font-family: 'Cookie', sans-serif;
+
     color: antiquewhite;
 
+    background: transparent;   /* no background */
+    border: none;              /* no border */
+    padding: 15px 40px;        /* keeps clickable area big */
+    cursor: pointer;
+}  
+
+button:hover {
+    color: rgb(228, 173, 55);   /* change to any color you want */
 }
 
 /*body {
