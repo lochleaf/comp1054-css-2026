@@ -1,0 +1,116 @@
+@charset "UTF-8";
+
+/* Import Google Fonts used for the layout */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Oswald&display=swap');
+
+
+/* Base typography */
+html{
+  font-weight: 400;
+  font-style: normal;
+  font-family: 'Merriweather', serif;
+  font-size: 14px;
+}
+
+/* Editorial */
+h1 { 
+
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    
+}
+
+/* Nominee Dewey */
+h2 {
+
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 75px;
+    letter-spacing: 18px;
+}
+
+/* Subheadings inside article */
+h4{
+
+    font-weight: bold;
+    font-size: 17px;
+}
+
+/* Subtitle under title */
+header p {
+
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight: bolder;
+    letter-spacing: 0px;
+    word-spacing: 4.5px;
+    font-size: 20px;
+    width: 995px;
+    position: relative;
+    left: -2px;
+} 
+
+/* Header styling */
+header{
+    text-transform: uppercase;
+}
+
+/* Style for Editorial label box */
+header h1{
+    display: inline;
+    border: 2px solid black;
+    padding: 0.1rem;
+    padding-left: 5px;
+    font-size: 20px;
+}
+
+/* Center header text and ALL paragraphs */
+header h2, p{
+    text-align: center;
+}
+
+/* Column layout */
+main {
+    columns: 3;
+}
+
+/* Body text styling */
+main p {
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    text-align: justify;
+    hyphens: auto;
+    text-rendering: optimizeLegibility;
+    margin-bottom: 1rem;
+}
+
+/* Slight upward shift for first paragraph */
+main > p:nth-of-type(1){
+
+    position: relative;
+    top: -17px;
+}
+
+/* Slight upward shift for paragraph 13 */
+main > p:nth-of-type(13){
+
+    position: relative;
+    top: -7px;
+}
+
+/* Slight upward shift for paragraph 19 */
+main > p:nth-of-type(19){
+
+    position: relative;
+    top: -7px;
+}
+
+/* Page container */
+#page{
+    max-width: 1000px;
+    margin: auto;
+    padding: 2rem;
+}
+
