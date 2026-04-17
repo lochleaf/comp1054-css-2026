@@ -24,3 +24,29 @@ details.forEach((detail) => {
 
 
 // This experiment based on https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details
+
+// Select all tab that point to #tabpanel IDs
+const tabs = document.querySelectorAll('a[href^="#tabpanel"]');
+
+// Select all elements that have role= tabpanel text box
+const panels = document.querySelectorAll('[role="tabpanel"]');
+
+// Loop through each tab
+tabs.forEach((tab) => {
+	console.log(event);
+    tab.addEventListener("toggle",  (event) => {
+		// STEP 8a: Check to see whether the DETAILS event that was toggled has the "open" attribute
+		console.log(event);
+		if (event.target.open) {
+			// STEP 8b: The browser just added the "open" attribute, so this DETAILS element was previously closed
+			tabs.forEach((tabs) => {
+				// STEP 8c: If this DETAILS element is NOT the one that was just clicked, close it by removing the "open" attribute
+				if (tab !== event.target) {
+					tab.removeAttribute("open");
+				}
+
+			});	
+		}
+	});
+});
+

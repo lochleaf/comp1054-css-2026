@@ -1,21 +1,109 @@
 @charset "utf-8";
+
+/* Import Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
+/* Apply border-box to html */
 html {
 	box-sizing: border-box;
+	
 }
 
+/* Inherit box-sizing for all elements and pseudo-elements */
 *,
 *:before,
 *:after {
 	box-sizing: inherit;
+	
 }
 
+/* default font */
 html {
 	font-family: "Open Sans", sans-serif;
+	
 }
 
-#container {
-	width: 80%;
-	margin: 0 auto;
+/* Styles for the tab navigation list */
+div ul {
+	list-style-type: none;
+	display: flex;
+	margin: 0;
+	padding: 0;
+	justify-content: center;
+	position: absolute;
+	top: 164px;
+	left: 588px;
+
 }
+
+/* Space between each tab */
+div li {
+	margin-right:  4px;
+	
+}
+
+/* Style for each tab */
+div li a {
+	display: block;
+	padding: 0.5em 1em;
+	background: #ccc;
+	text-decoration: none;
+	color: #000;
+	border: 2px solid black;
+	border-bottom: none;
+	border-radius: 10px 10px 0 0;
+	top: 0;    
+	z-index: 1;
+	
+}
+
+/* div padding */
+div {
+	padding: 5px;
+	
+}
+
+/* Content panel styling */
+div>div {
+	border: 2px solid rgb(0, 0, 0);
+	width: 800px;
+	position: absolute;
+	top: 200px;
+	left: 588px;
+	z-index: 2;
+	
+}
+
+/* Hide all tab panels by default */
+#tabpanel1,
+#tabpanel2,
+#tabpanel3 {
+	display: none;
+	
+}
+
+/* Show the panel when it is targeted */
+#tabpanel1:target,
+#tabpanel2:target,
+#tabpanel3:target {
+	display: block;
+
+}
+
+/* Active tab styling */
+.active {
+	background: #ffffff;
+	font-weight: bold;
+	position: relative;
+	height: 38px;
+	z-index: 3
+	
+}
+
+/* footer positioning */
+footer{
+	position: absolute;
+	top: 400px;
+
+}
+
