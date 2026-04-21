@@ -70,10 +70,13 @@ h6 {
 html {
   overflow-x: hidden;
 
-  background-image: url("images/black-white-tiles.jpg"); 
-
-  background-size: 720px 360px;
-
+  background-color:#28156b;
+  /* background-image: url("images/black-white-tiles.jpg");  */
+  background-image: url("images/IMG_4523.gif"), url("images/IMG_4521.gif"); 
+  /* background-size: 720px 360px; */
+  background-repeat: no-repeat;
+  background-size: cover, 2000px 1010px;
+  background-position: center, top;
 }
 
 
@@ -235,7 +238,7 @@ body {
   color: var(--color-text);
   font-family: var(--font-family); */
 
-  background-image: url("images/IMG_4523.gif"), url("images/IMG_4524.png"); 
+  /* background-image: url("images/IMG_4523.gif"), url("images/IMG_4524.png");  */
   background-size: 100% 100%;
   background-position: 45px;
 
