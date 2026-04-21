@@ -26,6 +26,37 @@
     src: url("../project1/Creepster/Creepster-Regular.ttf");
 }
 
+@media (max-width: 600px) {
+
+  header {
+    height: 50vh;
+    background-position: center;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  header h2 {
+    font-size: 1rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    width: 100%;
+    text-align: center;
+  }
+
+  nav ul a {
+    display: block;
+    width: 100%;
+  }
+
+}
 
 :root {
   --color-primary: #3a00ff;
@@ -302,7 +333,7 @@ article,
 
 } */
 
-header h1{
+/* header h1{
   color: white;
   text-align: right;
   position: relative;
@@ -310,6 +341,19 @@ header h1{
   top: 787px;
   font-size: 140%;
   font-family: 'Scary';
+} */
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header h1,
+header h2 {
+  position: static;
+  text-align: center;
 }
 
 
@@ -317,9 +361,10 @@ header{
   /* place-content: center; */
   background-image: url("images/IMG_4518.gif"); 
   background-repeat: no-repeat;
-  width: 1600px;
-  height: 850px;
-  background-position: 75% 100%;
+  width: 100%;
+  height: 60vh;
+  background-size: 100vh 70vh;
+  background-position: center ;
   
   /* left: 50%;
   /* 
