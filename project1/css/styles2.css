@@ -111,12 +111,19 @@ html {
 
 body {
 
-  background: url("../images/IMG_4518.gif"), url("../images/IMG_4523.gif"), url("../images/IMG_4524.png");
-  background-size: 1400px 850px, 400px 400px, 2000px 6000px; 
-  background-repeat: no-repeat, repeat, no-repeat;
-  background-position: top center, center, top;
+  background: url("../images/IMG_4527.png"), url("../images/IMG_4518.gif"), url("../images/IMG_4523.gif"), url("../images/IMG_4524.png");
+  background-size: 2100px 2100px, 1400px 850px, 400px 400px, 2000px 6000px; 
+  background-repeat: no-repeat, no-repeat, repeat, no-repeat;
+  background-position: 0px 0%, top center, center, center, top;
 
 }
+
+main {
+
+  position: relative;
+  top: 1200px;
+}
+
 
 /* fonts size */
 h1,
@@ -163,7 +170,7 @@ p {
   margin: 0 0 1rem;
 }
 
-article .container > ul:not(.features) > li + li,
+/* article .container > ul:not(.features) > li + li,
 article .container > ol > li + li {
   margin-top: 1rem;
 }
@@ -172,7 +179,7 @@ article .container * + h2 {
 }
 article .container * + h3 {
   margin-top: 2rem;
-}
+} */
 
 strong {
   font-weight: var(--font-weight-strong);
@@ -182,20 +189,62 @@ strong {
 
 
 
-/* header h1{
-  color: white;
-  text-align: right;
+h1:nth-of-type(1){
+  color: rgb(62, 224, 129);
   position: relative;
-  left: -14%;
-  top: 787px;
-  font-size: 140%;
+  left: 1340px;
+  top: -347px;
+  font-size: 170%;
   font-family: 'Scary';
+}
+
+header {
+  position: relative;
+  top: 1100px;
+
+  height: 1100px; /* IMPORTANT: give it space */
+
+  background-image: url("../images/IMG_4526.png");
+  background-repeat: no-repeat;
+  background-size: 1700px 1500px; 
+  background-position: center; 
+
+}
+
+p:nth-of-type(1) {
+
+  position: absolute;
+  top: 540px;
+  left: 760px;
+
+  text-align: center;
+  width: 300px;
+  color: #6d6294;
+}
+
+h2:nth-of-type(1) {
+  /* color: #d2fbf7; */
+  position: relative;
+  top: 380px; 
+  left: 38%;
+
+  text-align: center;
+  width: 400px;
+  font-size: 35px;
+}
+
+/* header {
+
+  background-image: url("images/IMG_4526.png");
+
+  background-repeat: no-repeat;
+  background-size: 2000px 2000px;
 } */
 
-header h2 {
+/* header h2 {
   max-width: 30ch;
   text-align: center;
-}
+} */
 
  /* {
 
@@ -212,7 +261,7 @@ nav ul {
   justify-content: center;
 
   position: relative;
-  top: 600px;
+  top: 1000px;
 
   margin: 0;
   padding: 20px;
