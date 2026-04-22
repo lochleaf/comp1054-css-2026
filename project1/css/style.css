@@ -235,7 +235,7 @@ body {
   color: var(--color-text);
   font-family: var(--font-family); */
 
-  background-image: url("images/IMG_4524.png"), url("images/IMG_4523.gif") ; 
+  background-image: url("../images/IMG_4523.gif") ; 
   background-size: 100% 100%;
   background-position: 45px;
 

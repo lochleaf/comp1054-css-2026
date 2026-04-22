@@ -2,23 +2,319 @@
 
 /* fonts */
 @font-face {
-    font-family: 'Scary';
-    src: url("../project1/Creepster/Creepster-Regular.ttf");
+    font-family: "Scary";
+    src: url("../Creepster/Creepster-Regular.ttf");
+}
+
+
+
+:root {
+  --color-primary: #3a00ff;
+  --color-primary-alt: #6f6ffd;
+  --color-secondary: #d42257;
+  --color-background: #d2fbf7;
+  --color-text: #412d86;
+  --color-light: #fff;
+  --color-anchor: #3a00ff;
+  --font-scary: "Scary";
+  --font-main: "Baloo 2", sans-serif;
+  /* --font-family: "Scary", sans-serif;
+  --font-family: "Baloo 2", sans-serif; */
+  --font-weight-strong: 500;
+  --font-size-h1: 6rem;
+  --font-size-h2: 3rem;
+  --font-size-h3: 2rem;
+  --font-size-h4: 1.35rem;
+  --font-size-text: 1.15rem;
+  --border-radius: 8px;
+}
+
+/*
+ * [Modified] Modern CSS Reset
+ * @link https://github.com/hankchizljaw/modern-css-reset
+*/
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
 }
 
 html {
   overflow-x: hidden;
 
-  background: url("../images/IMG_4524.png"), url("../images/black-white-tiles.jpg"); 
+  background-image: url("images/black-white-tiles.jpg"); 
 
-  background-repeat: no-repeat, repeat;
+  background-size: 720px 360px;
+
+}
+
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  font-size: 100%;
+  line-height: 1.5;
+  text-rendering: optimizeSpeed;
+  overflow-x: hidden;
+}
+
+/* Make images easier to work with */
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+
+
+
+/* html, body, header {
+  margin: 0;
+  padding: 0;
+} */
+
+html {
+
+  background-image: url("../images/black-white-tiles.jpg");
+  background-repeat: cover;
+
+}
+
+body {
+
+  background: url("../images/IMG_4518.gif"), url("../images/IMG_4523.gif"), url("../images/IMG_4524.png");
+  background-size: 1400px 850px, 400px 400px, 2000px 6000px; 
+  background-repeat: no-repeat, repeat, no-repeat;
+  background-position: top center, center, top;
+
+}
+
+/* fonts size */
+h1,
+h2,
+h3,
+h4 {
+  font-weight: var(--font-weight-strong);
+  line-height: 1;
+  margin-bottom: 0.65em;
+}
+
+h1 {
+  font-size: var(--font-size-h1);
+  font-size: clamp(2rem, 7vw, var(--font-size-h1));
+}
+
+h2 {
+  font-size: var(--font-size-h2);
+  font-size: clamp(2rem, 4vw, var(--font-size-h2));
+  text-align: center;
+}
+
+#main h2 {
+  /* background-color: var(--color-secondary); */
+  align-self: center;
+  color: var(--color-background);
+  padding: 0.25em 0.5em;
+}
+
+h3 {
+  font-size: var(--font-size-h3);
+}
+
+h4 {
+  font-size: var(--font-size-h4);
+}
+
+p,
+li {
+  font-size: var(--font-size-text);
+}
+
+p {
+  margin: 0 0 1rem;
+}
+
+article .container > ul:not(.features) > li + li,
+article .container > ol > li + li {
+  margin-top: 1rem;
+}
+article .container * + h2 {
+  margin-top: 4rem;
+}
+article .container * + h3 {
+  margin-top: 2rem;
+}
+
+strong {
+  font-weight: var(--font-weight-strong);
+}
+
+/* end of font size */
+
+
+
+/* header h1{
+  color: white;
+  text-align: right;
+  position: relative;
+  left: -14%;
+  top: 787px;
+  font-size: 140%;
+  font-family: 'Scary';
+} */
+
+header h2 {
+  max-width: 30ch;
+  text-align: center;
+}
+
+ /* {
+
+  background-image: url("../images/caution-tape-set-of-yellow-warning-ribbons-abstract-warning-lines-for-police-accident-under-construction-danger-tape-collection-free-vector-removebg-preview.png");
+} */
+
+nav {
+
+  font-family: 'Scary';
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+
+  position: relative;
+  top: 600px;
+
+  margin: 0;
+  padding: 20px;
+  list-style: none;
+
+  background-image: url("../images/caution-tape-set-of-yellow-warning-ribbons-abstract-warning-lines-for-police-accident-under-construction-danger-tape-collection-free-vector-removebg-preview.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+
+  min-height: 100px;
+}
+nav ul a {
+  display: inline-grid;
+  padding: 1rem 2rem;
+  color: #fff;
+  font-family: var(--font-scary);
+  /* color: var(--color-secondary); */
+  font-size: 3.25rem;
+  text-decoration: none;
+  
+  text-shadow:
+    0px 0px 5px #fff,
+    0px 0px 10px #4040a5,
+    0px 0px 20px #21213f;
+
+}
+nav ul a::before {
+  width: 100%;
+  height: 0.33em;
+  /* background-color: var(--color-secondary); */
+  opacity: 0.15;
+  /* content: ""; */
+}
+nav ul a:hover::before, nav ul a:focus::before {
+  opacity: 1;
+  
+}
+nav ul li {
+  
+  margin: 0.25rem;
+}
+
+
+
+/* html {
+  overflow-x: hidden;
+
+  background: url("../images/IMG_4524.png"), url("../images/black-white-tiles.jpg"), url("../images/caution-tape-set-of-yellow-warning-ribbons-abstract-warning-lines-for-police-accident-under-construction-danger-tape-collection-free-vector-removebg-preview.png"); 
+
+  background-repeat: no-repeat, repeat, no-repeat; */
 
   /* background-size: 2000px 2000px, 720px 360px;
 
   background-position: center; */
 
-  background-size: 2000px 100%, 720px 360px;
+  /* background-size: 100% auto, 720px 360px;
 
-  background-position: center top, center;
+  background-position: center top, center, center 10%;
+
+} */
+
+/* Make images easier to work with */
+/* img {
+  display: block;
+  max-width: 100%;
+} */
+
+/* body {
+
+  background: url("../images/IMG_4523.gif") ; 
+  
+  background-size: 50% 50%;
+  background-position: top center, center;
+
+  
+  background-repeat: no-repeat, repeat;
 
 }
+
+header h1{
+  color: white;
+  text-align: right;
+  position: absolute;
+  bottom: 20px;
+  right: 14%;
+  font-size: 140%;
+  font-size: 140%;
+  font-family: 'Scary';
+} */
+
+/* 
+header{
+  place-content: center;
+  position: relative;
+  height: 2000px;
+  background-image: url("../images/caution-tape-set-of-yellow-warning-ribbons-abstract-warning-lines-for-police-accident-under-construction-danger-tape-collection-free-vector-removebg-preview.png"), url("../images/IMG_4518.gif");
+  background-size: 2270px 270px, 1060px 850px;
+  
+  background-repeat: no-repeat;
+  background-position: center 100%, center 200px;
+
+width: 100%;
+height: 850px;
+} */
