@@ -6,7 +6,10 @@
     src: url("../Creepster/Creepster-Regular.ttf");
 }
 
-
+@font-face {
+    font-family: "Kirang";
+    src: url("../Bitcount_Single/static/BitcountSingle-Bold.ttf");
+}
 
 :root {
   --color-primary: #3a00ff;
@@ -52,7 +55,7 @@ h6 {
 }
 
 html {
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 
   background-image: url("images/black-white-tiles.jpg"); 
 
@@ -112,18 +115,138 @@ html {
 body {
 
   background: url("../images/IMG_4527.png"), url("../images/IMG_4518.gif"), url("../images/IMG_4523.gif"), url("../images/IMG_4524.png");
-  background-size: 2100px 2100px, 1400px 850px, 400px 400px, 2000px 6000px; 
-  background-repeat: no-repeat, no-repeat, repeat, no-repeat;
-  background-position: 0px 0%, top center, center, center, top;
+  background-size: 2100px 2100px, 1400px 850px, 400px 400px, 2000px 1000px; 
+  background-repeat: no-repeat, no-repeat, repeat, repeat-y;
+  background-position: 0px 0%, top center, center, center top;
 
 }
 
 main {
 
-  position: relative;
-  top: 1200px;
+  background-image: url("../images/IMG_4531.png"), url("../images/IMG_4532.png"), url("../images/IMG_4533.png");
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: 300px top, 300px 380px, 1000px -20px;
+  background-size: 2000px 2000px, 400px 400px, 400px 400px;
 }
 
+main h2:nth-of-type(1){
+
+  position: absolute;
+  top: -50%;
+
+  font-family: 'Kirang';
+  text-transform: uppercase;
+
+  font-size: 40px;
+border: 4px solid white;
+
+  text-shadow:
+  0px 0px 5px #fff,
+  0px 0px 10px #8b8d8d,
+  0px 0px 20px #21213f;
+}
+
+section p {
+  width: 500px;
+  color: rgb(255, 255, 255);
+  margin: 40px auto;   /* centers horizontally */
+  align-items: right;
+  font-family: 'Kirang';
+}
+
+/* staircase effect */
+/* section p:nth-of-type(1) { transform: translateX(10px); transform: translateX(500px);}
+section p:nth-of-type(2) { transform: translateX(10px); transform: translateX(200px);}
+section p:nth-of-type(3) { transform: translateX(10px); transform: translateX(-500px);}
+section p:nth-of-type(4) { transform: translateX(10px); transform: translateX(-800px);} */
+
+main section {
+  position: relative;
+  margin-top: 1300px;
+  text-align: center;
+  padding: 5px 5px 5px 5px;
+}
+
+main section p:nth-of-type(1) { transform: translateX(500px); font-size: 20px; border: 2px solid white; background-color:  rgb(19, 199, 160); padding: 5px 5px 5px 5px;}
+main section p:nth-of-type(2) { transform: translateX(180px); font-size: 20px; border: 2px solid white; background-color:  rgb(19, 199, 160); padding: 5px 5px 5px 5px;}
+
+main section blockquote p { position: absolute; left: 9.7%; top: 92%; font-size: 20px; border: 2px solid white; background-color:  rgb(19, 199, 160); padding: 5px 5px 5px 5px;}
+
+main section p:nth-of-type(3) { position: absolute; left: 20%; top: 153%; font-size: 20px; border: 2px solid white; background-color:  rgb(19, 199, 160); padding: 5px 5px 5px 5px;}
+
+
+/* blockquote p {
+  transform: translateX(-500px);
+
+} 
+/* section p:nth-of-type(5) { transform: translateX(-550px); } */
+
+/* section p:nth-of-type(5) { transform: translateX(400px); transform: translateX(300px);} */
+
+
+/* section:nth-of-type(1) {
+
+  position: relative;
+  top: 1200px;
+  text-align: left;
+}
+
+section:nth-of-type(2) {
+
+  position: relative;
+  top: 1600px;
+  text-align: left;
+}
+
+ p:nth-of-type(2){
+
+  position: absolute;
+  left: 60%;
+  top: 150px;
+  width: 300px;
+  color: aqua;
+}
+
+ p:nth-of-type(3){
+
+  position: absolute;
+  left: 40%;
+  top: 150px;
+  width: 300px;
+  color: aqua;
+}
+
+ p:nth-of-type(4){
+
+  position: absolute;
+  left: 20%;
+  top: 150px;
+  width: 300px;
+  color: aqua;
+}
+
+ p:nth-of-type(5){
+
+  position: absolute;
+  left: 10%;
+  top: 150px;
+  width: 300px;
+  color: aqua;
+} */
+
+/*
+p:nth-of-type(2){
+
+  left: 50px;
+  text-align: right;
+  width: 50px;
+} */
+
+footer {
+
+  position: relative;
+  top: 1600px;
+}
 
 /* fonts size */
 h1,
@@ -211,7 +334,7 @@ header {
 
 }
 
-p:nth-of-type(1) {
+header p:nth-of-type(1) {
 
   position: absolute;
   top: 540px;
