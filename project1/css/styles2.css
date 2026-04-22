@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+/* fonts */
+@font-face {
+    font-family: 'Scary';
+    src: url("../project1/Creepster/Creepster-Regular.ttf");
+}
+
+html {
+  overflow-x: hidden;
+
+  background: url("../images/IMG_4524.png"), url("../images/black-white-tiles.jpg"); 
+
+  background-repeat: no-repeat, repeat;
+
+  /* background-size: 2000px 2000px, 720px 360px;
+
+  background-position: center; */
+
+  background-size: 2000px 100%, 720px 360px;
+
+  background-position: center top, center;
+
+}

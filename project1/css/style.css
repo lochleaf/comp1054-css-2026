@@ -70,13 +70,10 @@ h6 {
 html {
   overflow-x: hidden;
 
-  background-color:#28156b;
-  /* background-image: url("images/black-white-tiles.jpg");  */
-  background-image: url("images/IMG_4523.gif"), url("images/IMG_4521.gif"); 
-  /* background-size: 720px 360px; */
-  background-repeat: no-repeat;
-  background-size: cover, 2000px 1010px;
-  background-position: center, top;
+  background-image: url("images/black-white-tiles.jpg"); 
+
+  background-size: 720px 360px;
+
 }
 
 
@@ -238,7 +235,7 @@ body {
   color: var(--color-text);
   font-family: var(--font-family); */
 
-  /* background-image: url("images/IMG_4523.gif"), url("images/IMG_4524.png");  */
+  background-image: url("images/IMG_4524.png"), url("images/IMG_4523.gif") ; 
   background-size: 100% 100%;
   background-position: 45px;
 
@@ -317,11 +314,13 @@ header{
   /* place-content: center; */
   background-image: url("images/IMG_4518.gif"); 
   background-repeat: no-repeat;
-  width: 100%;
-  height: 60vh; /* scales with screen */
-  background-size: cover;
-  background-position: center;
+  width: 1600px;
+  height: 850px;
+  background-position: 75% 100%, 69% -20%;
   
+  background-repeat: no-repeat;
+  width: 1600px;
+  height: 850px; */
   /* left: 50%;
   /* 
   background-size: 100%; */
@@ -344,16 +343,6 @@ header{
 header h2 {
   max-width: 30ch;
   text-align: center;
-  position: relative;
-  left: -14%;
-  top: 787px;
-}
-
-nav ul{
-  background-image: url("images/caution-tape-set-of-yellow-warning-ribbons-abstract-warning-lines-for-police-accident-under-construction-danger-tape-collection-free-vector-removebg-preview.png");
-  
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 nav ul {
@@ -374,8 +363,7 @@ nav ul a {
 nav ul a::before {
   width: 100%;
   height: 0.33em;
-  /* background-color: var(--color-secondary); */
-  
+  background-color: var(--color-secondary);
   opacity: 0.15;
   content: "";
 }
