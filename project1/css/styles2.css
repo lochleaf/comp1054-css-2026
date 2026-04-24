@@ -113,12 +113,31 @@ body {
   background-repeat: no-repeat, no-repeat,no-repeat, no-repeat, repeat, repeat-y;
   background-position: center 4400px, center 4110px, 0px 0%, top center, center, center top; */
 
-  background: url("../images/IMG_4540.png"), url("../images/IMG_4538.png"), url("../images/IMG_4537.png"), url("../images/IMG_4521.gif"), url("../images/IMG_4534.png"), url("../images/IMG_4527.png"), url("../images/IMG_4518.gif"), url("../images/IMG_4523.gif"), url("../images/IMG_4524.png");
-  background-size: 1600px 1600px, 800px 800px, 1900px 1900px, 800px 700px, 400px 400px, 2100px 2100px, 1400px 850px, 400px 400px, 2000px 1000px; 
-  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, repeat, repeat-y;
-  background-position: center 6200px, 430px 5410px, center 4670px, 450px 5390px, center 4110px, 0px 0%, top center, center, center top;
+  background-image: url("../images/caution-tape-set-of-yellow-warning-ribbons-abstract-warning-lines-for-police-accident-under-construction-danger-tape-collection-free-vector-removebg-preview.png"), url("../images/caution-tape-set-of-yellow-warning-ribbons-abstract-warning-lines-for-police-accident-under-construction-danger-tape-collection-free-vector-removebg-preview.png"), url("../images/IMG_4540.png"), url("../images/IMG_4538.png"), url("../images/IMG_4537.png"), url("../images/IMG_4521.gif"), url("../images/IMG_4534.png"), url("../images/IMG_4527.png"), url("../images/IMG_4518.gif"), url("../images/IMG_4523.gif"), url("../images/IMG_4524.png");
+  background-size: 2000px 300px, 2000px 300px, 1600px 1600px, 800px 800px, 1900px 1900px, 800px 700px, 400px 400px, 2100px 2100px, 1400px 850px, 400px 400px, 2000px 1000px; 
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, repeat, repeat-y;
+  background-position: center 8100px, center 7800px, center 6200px, 430px 5410px, center 4670px, 450px 5390px, center 4110px, 0px 0%, top center, center, center top;
+
+  /* background:
+    linear-gradient(rgba(40, 21, 107, 0.7), rgba(212, 34, 87, 0.6), rgba(255, 200, 0, 0.5)),
+    url("../images/IMG_4541.png"); */
 
 }
+
+/* #guidelines {
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(255, 153, 0, 0.7) 0%,
+      rgba(212, 185, 34, 0.6) 40%,
+      rgba(255, 0, 13, 0) 70%
+    )
+    1185px 5px / 250px 250px no-repeat,
+
+    url("../images/IMG_4541.png")
+    1100px -60px / 400px 400px no-repeat;
+} */
 
 main {
 
@@ -149,10 +168,11 @@ main section:first-of-type h2{
 main section:nth-of-type(2) h2{
 
   position: absolute;
-  top: -27.5%;
+  top: -25%;
   left: 50%;
   transform: translateX(-50%);
 
+  letter-spacing: 5px;
   font-family: 'Kirang';
   text-transform: uppercase;
 
@@ -180,6 +200,108 @@ article:nth-of-type(2) h2{
   0px 0px 5px #fff,
   0px 0px 10px #8b8d8d,
   0px 0px 20px #21213f;
+}
+
+#contribute section:nth-of-type(2) h3 {
+  color: white;
+  border: 2px solid white;
+  width: 300px;
+  position: relative;
+  left: 780px;
+  top: -900px;
+  background-color: rgb(19, 199, 160);
+}
+
+#contribute section:nth-of-type(2) ol {
+  color: white;
+  border: 2px solid white;
+  position: relative;
+  left: 550px;
+  top: -800px;
+  width: 800px;
+  background-color: rgb(19, 199, 160);
+}
+
+#contribute h2{
+
+  position: relative;
+  left: 900px;
+  top: 30px;
+  transform: translateX(-50%);
+
+  font-family: 'Kirang';
+  text-transform: uppercase;
+
+  font-size: 40px;
+  border: 4px solid white;
+  text-shadow:
+  0px 0px 5px #ffffff,
+  0px 0px 10px #535353,
+  0px 0px 20px #21213f;
+  letter-spacing: 5px;
+}
+
+#guidelines {
+  position: relative;
+}
+
+#contribute {
+  
+background-image: 
+  linear-gradient(rgb(40, 21, 107), rgba(212, 34, 87, 0.6)),
+  url("../images/IMG_4538.png");
+
+background-size: 
+  1390px 1400px,             
+  2000px 4000px;    
+
+background-position: 
+  center top,             
+  center -1000px;     
+
+background-repeat: 
+  no-repeat,
+  no-repeat;
+}
+
+#contribute p:nth-of-type(1) {
+
+  position: relative;
+  top: 150px;
+  left: -205px;
+}
+
+#contribute p:nth-of-type(2) {
+
+  position: relative;
+  top: 300px;
+  left: -205px;
+  width: 805px;
+}
+
+.link-guidelines {
+
+  position: absolute;
+  top: 680px;
+  left: 470px;
+}
+
+#guidelines h2 {
+
+  /* position: relative;
+  left: 900px;
+  transform: translateX(-50%); */
+
+  font-family: 'Kirang';
+  text-transform: uppercase;
+
+  font-size: 40px;
+  border: 4px solid white;
+  text-shadow:
+  0px 0px 5px #000000,
+  0px 0px 10px #8b8d8d,
+  0px 0px 20px #21213f;
+  letter-spacing: 5px;
 }
 
 section p {
@@ -210,8 +332,9 @@ main section:first-of-type p:nth-of-type(3) { position: absolute; left: 20%; top
 footer {
 
   position: relative;
-  top: 1600px;
 }
+
+
 
 /* fonts size */
 h1,
@@ -389,10 +512,11 @@ nav ul li {
 #guidelines p:nth-of-type(2) {
 
   position: absolute;
-  top: 180px;
-  left: -300px;
-  width: 750px;
+  top: 203px;
+  left: -210px;
+  width: 660px;
   background-color: rgb(107, 206, 202);
+  border: 2px solid #fff;
 }
 
 #guidelines p:nth-of-type(3) {
@@ -402,6 +526,17 @@ nav ul li {
   left: 700px;
   width: 750px;
   background-color: rgb(60, 187, 84);
+  border: 2px solid white;
+}
+
+#guidelines p:nth-of-type(4) {
+
+  position: absolute;
+  top: -10px;
+  left: 1220px;
+  width: 200px;
+  background-color: rgb(211, 190, 111);
+  border: 2px solid white;
 }
 
 #about section:nth-child(2) {
@@ -921,8 +1056,16 @@ height: 100px; */
 #guidelines h3 {
   display: inline-block;
   transform: rotate(-8deg) translateX(-10%);
-  background: linear-gradient(to right, var(--color-primary), var(--color-secondary));
+  background: 
+  linear-gradient(to right, var(--color-primary), var(--color-secondary));
+  position: absolute;
+  left: 580px;
+  top: 200px;
+  border: 2px solid #d2fbf7;
+  
 }
+
+
 @supports (background-clip: text) or (-webkit-background-clip: text) {
   #guidelines h3 {
     -webkit-background-clip: text;
@@ -982,7 +1125,7 @@ height: 100px; */
   display: inline-block;
   padding: 5vmin;
   outline: 4px dashed var(--color-secondary);
-  background-color: var(--color-background);
+  background-color: rgb(255, 208, 0);
   text-align: center;
 }
 #files .container a:not(:last-child) {
@@ -1283,4 +1426,114 @@ height: 100px; */
   height: 1em;
   margin-right: 0.25em;
   fill: currentColor;
+}
+
+#files .container {
+  display: flex;
+  flex-direction: column;   
+  align-items: center;      
+  text-align: center;   
+  border: #d2fbf7;    
+}
+
+#files a {
+  margin: 0.5em 0;
+}
+
+#files p {
+  border: 2px solid #d2fbf7;
+}
+
+@media (max-width: 900px) {
+
+  /* make containers fit screen */
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  /* navigation wraps */
+  nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  /* your list boxes shrink */
+  #about section:nth-child(2) ul li {
+    width: 120px;
+    height: 90px;
+    font-size: 10px;
+  }
+
+  /* headings scale down */
+  h1 { font-size: 2rem; }
+  h2 { font-size: 1.5rem; }
+  h3 { font-size: 1.2rem; }
+
+  /* fix absolute elements (center instead) */
+  .link-guidelines {
+    position: static;
+    display: inline-block;
+    margin-top: 1rem;
+  }
+
+  /* footer links stack nicer */
+  #files .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  /* stack EVERYTHING */
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* remove fragile absolute positioning */
+  h3 {
+    position: static !important;
+    transform: none !important;
+    text-align: center;
+  }
+
+  /* make your image boxes smaller */
+  #about section:nth-child(2) ul li {
+    width: 100px;
+    height: 80px;
+    font-size: 9px;
+    padding: 5px;
+  }
+
+  /* reduce spacing */
+  section {
+    padding: 1rem 0;
+  }
+
+  /* text readability */
+  p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+
+  /* fix giant positioned backgrounds */
+  #guidelines {
+    background-position: center;
+    background-size: contain;
+  }
+
+  /* footer buttons full width */
+  #files a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 0.5rem 0;
+  }
+
 }

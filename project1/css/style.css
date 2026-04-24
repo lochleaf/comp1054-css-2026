@@ -223,6 +223,13 @@ blockquote::after {
   }
 }
 
+
+/* #guidelines h3 {
+
+  position: absolute;
+  left: -500px;
+} */
+
 #guidelines p:nth-of-type(1),
 #contribute p:nth-of-type(1) {
   font-size: var(--font-size-h4);
