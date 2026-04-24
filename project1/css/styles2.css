@@ -37,14 +37,15 @@
  * [Modified] Modern CSS Reset
  * @link https://github.com/hankchizljaw/modern-css-reset
 */
-/* Box sizing rules */
+
+/* applies border-box sizing to all elements and pseudo-elements */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
-/* Remove default margin */
+/* removes default margins from body and headings */
 body,
 h1,
 h2,
@@ -55,6 +56,7 @@ h6 {
   margin: 0;
 }
 
+/* sets background image and size for the page */
 html {
   /* overflow-x: hidden; */
 
@@ -64,13 +66,14 @@ html {
 
 }
 
-/* Set core body defaults */
+/* sets base typography and prevents horizontal scroll */
 body {
   min-height: 100vh;
   font-size: 100%;
   line-height: 1.5;
   text-rendering: optimizeSpeed;
   overflow-x: hidden;
+  font-family: 'Kirang';
 }
 
 /* Make images easier to work with */
@@ -79,7 +82,7 @@ img {
   max-width: 100%;
 }
 
-/* Inherit fonts for inputs and buttons */
+/* makes form elements use the same font as the rest of the page */
 input,
 button,
 textarea,
@@ -98,7 +101,7 @@ select {
 }
 
 
-
+/* sets the ultimate background image and repeat */
 html {
 
   background-image: url("../images/black-white-tiles.jpg");
@@ -106,39 +109,21 @@ html {
 
 }
 
+/* body background styling and images*/
+/* applies multiple layered background images with sizes, repeats, and positions */
 body {
 
-  /* background: url("../images/IMG_4535.png"), url("../images/IMG_4534.png"), url("../images/IMG_4527.png"), url("../images/IMG_4518.gif"), url("../images/IMG_4523.gif"), url("../images/IMG_4524.png");
-  background-size: 800px 800px, 400px 400px, 2100px 2100px, 1400px 850px, 400px 400px, 2000px 1000px; 
-  background-repeat: no-repeat, no-repeat,no-repeat, no-repeat, repeat, repeat-y;
-  background-position: center 4400px, center 4110px, 0px 0%, top center, center, center top; */
 
   background-image: url("../images/caution-tape-set-of-yellow-warning-ribbons-abstract-warning-lines-for-police-accident-under-construction-danger-tape-collection-free-vector-removebg-preview.png"), url("../images/caution-tape-set-of-yellow-warning-ribbons-abstract-warning-lines-for-police-accident-under-construction-danger-tape-collection-free-vector-removebg-preview.png"), url("../images/IMG_4540.png"), url("../images/IMG_4538.png"), url("../images/IMG_4537.png"), url("../images/IMG_4521.gif"), url("../images/IMG_4534.png"), url("../images/IMG_4527.png"), url("../images/IMG_4518.gif"), url("../images/IMG_4523.gif"), url("../images/IMG_4524.png");
   background-size: 2000px 300px, 2000px 300px, 1600px 1600px, 800px 800px, 1900px 1900px, 800px 700px, 400px 400px, 2100px 2100px, 1400px 850px, 400px 400px, 2000px 1000px; 
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, repeat, repeat-y;
   background-position: center 8100px, center 7800px, center 6200px, 430px 5410px, center 4670px, 450px 5390px, center 4110px, 0px 0%, top center, center, center top;
 
-  /* background:
-    linear-gradient(rgba(40, 21, 107, 0.7), rgba(212, 34, 87, 0.6), rgba(255, 200, 0, 0.5)),
-    url("../images/IMG_4541.png"); */
 
 }
 
-/* #guidelines {
 
-  background:
-    radial-gradient(
-      circle,
-      rgba(255, 153, 0, 0.7) 0%,
-      rgba(212, 185, 34, 0.6) 40%,
-      rgba(255, 0, 13, 0) 70%
-    )
-    1185px 5px / 250px 250px no-repeat,
-
-    url("../images/IMG_4541.png")
-    1100px -60px / 400px 400px no-repeat;
-} */
-
+/* main section background styling */
 main {
 
   background-image: url("../images/IMG_4531.png"), url("../images/IMG_4532.png"), url("../images/IMG_4533.png");
@@ -147,6 +132,7 @@ main {
   background-size: 2000px 2000px, 400px 400px, 400px 400px;
 }
 
+/* first section heading styling */
 main section:first-of-type h2{
 
   position: absolute;
@@ -165,6 +151,7 @@ main section:first-of-type h2{
 
 }
 
+/* second section heading styling */
 main section:nth-of-type(2) h2{
 
   position: absolute;
@@ -185,6 +172,7 @@ main section:nth-of-type(2) h2{
   0px 0px 20px #21213f;
 }
 
+/* second article heading styling */
 article:nth-of-type(2) h2{
 
   position: relative;
@@ -202,6 +190,7 @@ article:nth-of-type(2) h2{
   0px 0px 20px #21213f;
 }
 
+/* contribute section subtitle styling */
 #contribute section:nth-of-type(2) h3 {
   color: white;
   border: 2px solid white;
@@ -212,6 +201,7 @@ article:nth-of-type(2) h2{
   background-color: rgb(19, 199, 160);
 }
 
+/* contribute ordered list styling */
 #contribute section:nth-of-type(2) ol {
   color: white;
   border: 2px solid white;
@@ -222,6 +212,7 @@ article:nth-of-type(2) h2{
   background-color: rgb(19, 199, 160);
 }
 
+/* contribute main heading styling */
 #contribute h2{
 
   position: relative;
@@ -241,29 +232,26 @@ article:nth-of-type(2) h2{
   letter-spacing: 5px;
 }
 
+/* guidelines container positioning */
 #guidelines {
   position: relative;
 }
 
+/* contribute section background styling */
 #contribute {
   
 background-image: 
   linear-gradient(rgb(40, 21, 107), rgba(212, 34, 87, 0.6)),
   url("../images/IMG_4538.png");
 
-background-size: 
-  1390px 1400px,             
-  2000px 4000px;    
+background-size: 1390px 1400px, 2000px 4000px;    
 
-background-position: 
-  center top,             
-  center -1000px;     
+background-position: center top, center -1000px;     
 
-background-repeat: 
-  no-repeat,
-  no-repeat;
+background-repeat: no-repeat, no-repeat;
 }
 
+/* first contribute paragraph positioning */
 #contribute p:nth-of-type(1) {
 
   position: relative;
@@ -271,6 +259,7 @@ background-repeat:
   left: -205px;
 }
 
+/* second contribute paragraph positioning */
 #contribute p:nth-of-type(2) {
 
   position: relative;
@@ -279,6 +268,7 @@ background-repeat:
   width: 805px;
 }
 
+/* guidelines link positioning */
 .link-guidelines {
 
   position: absolute;
@@ -286,11 +276,8 @@ background-repeat:
   left: 470px;
 }
 
+/* guidelines heading styling */
 #guidelines h2 {
-
-  /* position: relative;
-  left: 900px;
-  transform: translateX(-50%); */
 
   font-family: 'Kirang';
   text-transform: uppercase;
@@ -304,15 +291,16 @@ background-repeat:
   letter-spacing: 5px;
 }
 
+/* general section paragraph styling */
 section p {
   width: 500px;
   color: rgb(255, 255, 255);
-  margin: 40px auto;   /* centers horizontally */
+  margin: 40px auto;
   align-items: right;
   font-family: 'Kirang';
 }
 
-
+/* main section layout */
 main section {
   position: relative;
   margin-top: 1300px;
@@ -320,23 +308,22 @@ main section {
   padding: 5px 5px 5px 5px;
 }
 
+/* first section paragraph styling */
 main section:first-of-type p:nth-of-type(1) { transform: translateX(500px); font-size: 20px; border: 2px solid white; background-color:  rgb(19, 199, 160); padding: 5px 5px 5px 5px;}
 main section:first-of-type p:nth-of-type(2) { transform: translateX(180px); font-size: 20px; border: 2px solid white; background-color:  rgb(19, 199, 160); padding: 5px 5px 5px 5px;}
 
+/* first section blockquote styling */
 main section:first-of-type blockquote p { position: absolute; left: 9.7%; top: 92%; font-size: 20px; border: 2px solid white; background-color:  rgb(19, 199, 160); padding: 5px 5px 5px 5px;}
 
+/* third paragraph in first section */
 main section:first-of-type p:nth-of-type(3) { position: absolute; left: 20%; top: 153%; font-size: 20px; border: 2px solid white; background-color:  rgb(19, 199, 160); padding: 5px 5px 5px 5px;}
 
-
-
+/* footer styling */
 footer {
-
   position: relative;
 }
 
-
-
-/* fonts size */
+/* heading typography styling */
 h1,
 h2,
 h3,
@@ -346,69 +333,63 @@ h4 {
   margin-bottom: 0.65em;
 }
 
+/* h1 styling */
 h1 {
   font-size: var(--font-size-h1);
   font-size: clamp(2rem, 7vw, var(--font-size-h1));
 }
 
+/* h2 styling */
 h2 {
   font-size: var(--font-size-h2);
   font-size: clamp(2rem, 4vw, var(--font-size-h2));
   text-align: center;
 }
 
+/* main h2 override styling */
 #main h2 {
-  /* background-color: var(--color-secondary); */
   align-self: center;
   color: var(--color-background);
   padding: 0.25em 0.5em;
 }
 
+/* h3 styling */
 h3 {
   font-size: var(--font-size-h3);
 }
 
+/* h4 styling */
 h4 {
   font-size: var(--font-size-h4);
 }
 
+/* paragraph and list text styling */
 p,
 li {
   font-size: var(--font-size-text);
 }
 
+/* paragraph spacing */
 p {
   margin: 0 0 1rem;
 }
 
-/* article .container > ul:not(.features) > li + li,
-article .container > ol > li + li {
-  margin-top: 1rem;
-}
-article .container * + h2 {
-  margin-top: 4rem;
-}
-article .container * + h3 {
-  margin-top: 2rem;
-} */
-
+/* strong text styling */
 strong {
   font-weight: var(--font-weight-strong);
 }
 
-/* end of font size */
-
-
-
+/* main title styling */
 h1:nth-of-type(1){
   color: rgb(62, 224, 129);
   position: relative;
   left: 1340px;
-  top: -347px;
+  top: -327px;
   font-size: 170%;
   font-family: 'Scary';
 }
 
+/* header layout and background */
 header {
   position: relative;
   top: 1100px;
@@ -419,13 +400,13 @@ header {
   background-repeat: no-repeat;
   background-size: 1700px 1500px; 
   background-position: center; 
-
 }
 
+/* first paragraph inside header */
 header p:nth-of-type(1) {
 
   position: absolute;
-  top: 540px;
+  top: 570px;
   left: 760px;
 
   text-align: center;
@@ -433,8 +414,8 @@ header p:nth-of-type(1) {
   color: #6d6294;
 }
 
+/* first h2 styling */
 h2:nth-of-type(1) {
-  /* color: #d2fbf7; */
   position: relative;
   top: 380px; 
   left: 38%;
@@ -444,12 +425,12 @@ h2:nth-of-type(1) {
   font-size: 35px;
 }
 
-
+/* navigation container font */
 nav {
-
   font-family: 'Scary';
 }
 
+/* navigation list layout */
 nav ul {
   display: flex;
   justify-content: center;
@@ -468,12 +449,13 @@ nav ul {
 
   min-height: 100px;
 }
+
+/* navigation links styling */
 nav ul a {
   display: inline-grid;
   padding: 1rem 2rem;
   color: #fff;
   font-family: var(--font-scary);
-  /* color: var(--color-secondary); */
   font-size: 3.25rem;
   text-decoration: none;
   
@@ -481,27 +463,28 @@ nav ul a {
     0px 0px 5px #fff,
     0px 0px 10px #4040a5,
     0px 0px 20px #21213f;
-
 }
+
+/* nav link decorative underline (inactive) */
 nav ul a::before {
   width: 100%;
   height: 0.33em;
-  /* background-color: var(--color-secondary); */
   opacity: 0.15;
-  /* content: ""; */
 }
+
+/* nav hover/focus effect */
 nav ul a:hover::before, nav ul a:focus::before {
   opacity: 1;
-  
 }
+
+/* nav list item spacing */
 nav ul li {
-  
   margin: 0.25rem;
 }
 
-/* ---------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------ */
+/* guidelines paragraph 1 */
 #guidelines p:nth-of-type(1) {
-
   position: absolute;
   top: -150px;
   left: 20px;
@@ -509,8 +492,8 @@ nav ul li {
   color: #21213f;
 }
 
+/* guidelines paragraph 2 */
 #guidelines p:nth-of-type(2) {
-
   position: absolute;
   top: 203px;
   left: -210px;
@@ -519,8 +502,8 @@ nav ul li {
   border: 2px solid #fff;
 }
 
+/* guidelines paragraph 3 */
 #guidelines p:nth-of-type(3) {
-
   position: absolute;
   top: 650px;
   left: 700px;
@@ -529,8 +512,8 @@ nav ul li {
   border: 2px solid white;
 }
 
+/* guidelines paragraph 4 */
 #guidelines p:nth-of-type(4) {
-
   position: absolute;
   top: -10px;
   left: 1220px;
@@ -539,16 +522,12 @@ nav ul li {
   border: 2px solid white;
 }
 
+/* about section positioning wrapper */
 #about section:nth-child(2) {
   position: relative;
-
-  /* background-image: url("../images/IMG_4534.png");
-  background-size: 800px 800px;
-  background-position: center -200px;
-  background-repeat: no-repeat; */
 }
 
-
+/* about paragraph 2 styling */
 #about section:nth-child(2) p:nth-of-type(2) {
   align-self: center;
   margin-top: 2rem;
@@ -561,9 +540,9 @@ nav ul li {
   0px 0px 5px #fff,
   0px 0px 10px #f7d6d6,
   0px 0px 20px #21213f;
-
 }
 
+/* about section ul li files image for flex box 1 */
 #about section:nth-child(2) ul > li:nth-of-type(1) {
   width: 140px;
   height: 100px;
@@ -587,6 +566,7 @@ nav ul li {
   word-break: break-word;
 }
 
+/* about section ul li files image for flex box 2 */
 #about section:nth-child(2) ul > li:nth-of-type(2) {
   width: 140px;
   height: 100px;
@@ -608,10 +588,10 @@ nav ul li {
 
   overflow: hidden;
   word-break: break-word;
-
 }
 
-#about section:nth-child(2) ul > li:nth-of-type(3) {
+/* about section ul li files image for flex box 3 */
+#about section:nth-child(2) ul > li:nth-of-type(3) { /* same styling pattern */
   width: 140px;
   height: 100px;
 
@@ -632,9 +612,9 @@ nav ul li {
 
   overflow: hidden;
   word-break: break-word;
-
 }
 
+/* about section ul li files image for flex box 4 */
 #about section:nth-child(2) ul > li:nth-of-type(4) {
   width: 140px;
   height: 100px;
@@ -656,9 +636,9 @@ nav ul li {
 
   overflow: hidden;
   word-break: break-word;
-
 }
 
+/* about section ul li files image for flex box 5 */
 #about section:nth-child(2) ul > li:nth-of-type(5) {
   width: 140px;
   height: 100px;
@@ -680,9 +660,9 @@ nav ul li {
 
   overflow: hidden;
   word-break: break-word;
-
 }
 
+/* about section ul li files image for flex box */
 #about section:nth-child(2) ul > li:nth-of-type(6) {
   width: 140px;
   height: 100px;
@@ -704,9 +684,9 @@ nav ul li {
 
   overflow: hidden;
   word-break: break-word;
-
 }
 
+/* about section ul li files image for flex box 7 */
 #about section:nth-child(2) ul > li:nth-of-type(7) {
   width: 140px;
   height: 100px;
@@ -728,10 +708,10 @@ nav ul li {
 
   overflow: hidden;
   word-break: break-word;
-
 }
 
-#about section:nth-child(2) ul > li:nth-of-type(8) {
+/* about section ul li files image for flex box 8 */
+#about section:nth-child(2) ul > li:nth-of-type(8) { /* repeated pattern */
   width: 140px;
   height: 100px;
 
@@ -752,9 +732,9 @@ nav ul li {
 
   overflow: hidden;
   word-break: break-word;
-
 }
 
+/* about section ul li files image for flex box 9 */
 #about section:nth-child(2) ul > li:nth-of-type(9) {
   width: 140px;
   height: 100px;
@@ -776,9 +756,9 @@ nav ul li {
 
   overflow: hidden;
   word-break: break-word;
-
 }
 
+/* about section ul li files image for flex box 10 */
 #about section:nth-child(2) ul > li:nth-of-type(10) {
   width: 140px;
   height: 100px;
@@ -800,9 +780,9 @@ nav ul li {
 
   overflow: hidden;
   word-break: break-word;
-
 }
 
+/* about section ul li files image for flex box 11 */
 #about section:nth-child(2) ul > li:nth-of-type(11) {
   width: 140px;
   height: 100px;
@@ -824,9 +804,9 @@ nav ul li {
 
   overflow: hidden;
   word-break: break-word;
-
 }
 
+/* about section ul li files image for flex box 12 */
 #about section:nth-child(2) ul > li:nth-of-type(12) {
   width: 140px;
   height: 100px;
@@ -848,9 +828,9 @@ nav ul li {
 
   overflow: hidden;
   word-break: break-word;
-
 }
 
+/* about section ul li files image for flex box 13 */
 #about section:nth-child(2) ul > li:nth-of-type(13) {
   width: 140px;
   height: 100px;
@@ -872,9 +852,9 @@ nav ul li {
 
   overflow: hidden;
   word-break: break-word;
-
 }
 
+/* about section ul li files image for flex box 14 */
 #about section:nth-child(2) ul > li:nth-of-type(14) {
   width: 140px;
   height: 100px;
@@ -896,9 +876,9 @@ nav ul li {
 
   overflow: hidden;
   word-break: break-word;
-
 }
 
+/* about section ul li files image for flex box 15 */
 #about section:nth-child(2) ul > li:nth-of-type(15) {
   width: 140px;
   height: 100px;
@@ -920,9 +900,9 @@ nav ul li {
 
   overflow: hidden;
   word-break: break-word;
-
 }
 
+/* about section ul li files image for flex box 16 */
 #about section:nth-child(2) ul > li:nth-of-type(16) {
   width: 140px;
   height: 100px;
@@ -944,9 +924,9 @@ nav ul li {
 
   overflow: hidden;
   word-break: break-word;
-
 }
 
+/* about section ul li files image for flex box 17 */
 #about section:nth-child(2) ul > li:nth-of-type(17) {
   width: 140px;
   height: 100px;
@@ -968,9 +948,9 @@ nav ul li {
 
   overflow: hidden;
   word-break: break-word;
-
 }
 
+/* about section ul layout */
 #about section:nth-child(2) ul {
   display: flex;
   flex-wrap: wrap;
@@ -985,10 +965,11 @@ nav ul li {
   position:relative;
   left: 430px;
 }
+
+/* about section ul list items */
 #about section:nth-child(2) ul li {
   margin: 1em;
   padding: 0.5em 0.5em 0.5em 0.5em;
-  /* background-color: var(--color-light); */
 
   line-height: 1.2;
   letter-spacing: -0.3px;
@@ -996,25 +977,10 @@ nav ul li {
   color: rgb(2, 32, 46);
   font-family: 'Courier New', Courier, monospace;
   font-weight: bolder;
-  /* background-image: url("../images/IMG_4535.png");
-  border: 2px solid white;
-
-  display: flex;            
-  align-items: center;        
-  justify-content: center;    
-
-  align-items: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-
-width: 200px; 
-height: 100px; */
-
 }
 
+/* about paragraph 3 positioning */
 #about section:nth-child(2) p:nth-of-type(3) {
-
   position: relative;
   left: -100px;
   top: 590px;
@@ -1023,8 +989,8 @@ height: 100px; */
   font-size: 23px;
 }
 
+/* about paragraph 4 positioning */
 #about section:nth-child(2) p:nth-of-type(4) {
-
   position: relative;
   left: -100px;
   top: 560px;
@@ -1033,26 +999,14 @@ height: 100px; */
   font-size: 23px;
 }
 
-/* #about section:nth-child(2)::before {
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  width: 100%;
-  height: 0;
-  padding-bottom: 100%;
-  transform: translate(-50%, -50%);
-  transition: 300ms transform ease-in;
-  background-image: radial-gradient(rgba(255, 0, 0, 0) 20%, #b3f8f1 20%, #b3f8f1 25%, rgba(255, 0, 0, 0) 25%, rgba(255, 0, 0, 0) 30%, #b3f8f1 30%, #b3f8f1 40%, rgba(255, 0, 0, 0) 40%, rgba(255, 0, 0, 0) 45%, #b3f8f1 45%, #b3f8f1 50%, rgba(255, 0, 0, 0) 50%);
-  opacity: 0.8;
-  content: "";
-  z-index: -1;
-} */
+/* responsive before element tried about section */
 @media (max-width: 35rem) {
   #about section:nth-child(2)::before {
     transform: scale(2) translate(-25%, -25%);
   }
 }
 
+/* guidelines heading (h3) styling */
 #guidelines h3 {
   display: inline-block;
   transform: rotate(-8deg) translateX(-10%);
@@ -1062,10 +1016,9 @@ height: 100px; */
   left: 580px;
   top: 200px;
   border: 2px solid #d2fbf7;
-  
 }
 
-
+/* text gradient support for guidelines h3 */
 @supports (background-clip: text) or (-webkit-background-clip: text) {
   #guidelines h3 {
     -webkit-background-clip: text;
@@ -1073,15 +1026,20 @@ height: 100px; */
     color: transparent;
   }
 }
+
+/* large screen adjustment for guidelines h3 */
 @media (min-width: 120ch) {
   #guidelines h3 {
     transform: rotate(-8deg) translateX(-30%);
   }
 }
+
+/* decorative pseudo text for guidelines paragraph */
 @supports (background-clip: text) or (-webkit-background-clip: text) {
   #guidelines p:nth-of-type(2) {
     position: relative;
   }
+
   #guidelines p:nth-of-type(2)::before {
     position: absolute;
     top: 0;
@@ -1096,31 +1054,27 @@ height: 100px; */
     content: "← Whoa, text gradients!";
   }
 }
+
+/* guidelines container link alignment */
 #guidelines .container > a {
   align-self: center;
 }
 
-/* #contribute {
-  background: repeating-linear-gradient(-45deg, transparent, transparent 10px, #b3f8f1 10px, #b3f8f1 18px);
-} */
-/* #contribute section {
-  padding: 2rem;
-  background-color: var(--color-background);
-} */
-/* #contribute section:nth-child(2) {
-  padding-top: 0;
-} */
-
+/* file download section layout */
 #files {
   display: grid;
   place-content: center;
   margin: 5vh auto;
   text-align: center;
 }
+
+/* files heading hidden */
 #files h3 {
   height: 0;
   opacity: 0;
 }
+
+/* files container styling */
 #files .container {
   display: inline-block;
   padding: 5vmin;
@@ -1128,22 +1082,25 @@ height: 100px; */
   background-color: rgb(255, 208, 0);
   text-align: center;
 }
+
+/* spacing between file links */
 #files .container a:not(:last-child) {
   margin: 0.5rem;
 }
+
+/* larger file link styling */
 #files .container a:not(:last-child):not(.link-codepen) {
   font-size: clamp(1.5rem, 4vw, 2rem);
 }
 
+/* features grid layout */
 .features {
   position: relative;
   width: 100%;
   grid-template-columns: repeat(auto-fit, minmax(25ch, 1fr));
-  /*! 
-    * SVGs from Hero Patterns
-    * @link http://www.heropatterns.com/
-    */
 }
+
+/* feature item styling */
 .features li {
   display: grid;
   position: relative;
@@ -1153,6 +1110,8 @@ height: 100px; */
   color: var(--color-light);
   text-align: center;
 }
+
+/* feature inner box */
 .features li > span {
   display: grid;
   place-content: center;
@@ -1162,12 +1121,16 @@ height: 100px; */
   background-color: var(--color-secondary);
   line-height: 1.1;
 }
+
+/* feature links */
 .features li > span a {
   color: inherit;
   font-size: 1.3rem;
   font-weight: var(--font-weight-strong);
   text-decoration: none;
 }
+
+/* feature clickable overlay */
 .features li > span a::before {
   position: absolute;
   top: 0;
@@ -1176,53 +1139,32 @@ height: 100px; */
   height: 100%;
   content: "";
 }
+
+/* feature secondary text positioning */
 .features li > span span:nth-child(2) {
   position: relative;
 }
 
+/* styles section layout */
 #styles {
   margin: 5vh 0 20vh;
   text-align: center;
 }
+
+/* styles heading color */
 #styles h2 {
   color: var(--color-primary);
 }
 
-/* #styles .features li,
-.features.patterned li {
-  background-color: var(--color-secondary);
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='72' viewBox='0 0 36 72'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23fff' fill-opacity='0.4'%3E%3Cpath d='M2 6h12L8 18 2 6zm18 36h12l-6 12-6-12z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-} */
+/* tried responsive grid tweak */
 @media (min-width: 515px) and (max-width: 765px) {
   #styles .features li:nth-last-child(1):nth-child(odd),
   .features.patterned li:nth-last-child(1):nth-child(odd) {
     grid-column: span 2;
   }
 }
-/* #styles .features li:nth-child(2),
-.features.patterned li:nth-child(2) {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='88' height='24' viewBox='0 0 88 24'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='autumn' fill='%23fff' fill-opacity='0.4'%3E%3Cpath d='M10 0l30 15 2 1V2.18A10 10 0 0 0 41.76 0H39.7a8 8 0 0 1 .3 2.18v10.58L14.47 0H10zm31.76 24a10 10 0 0 0-5.29-6.76L4 1 2 0v13.82a10 10 0 0 0 5.53 8.94L10 24h4.47l-6.05-3.02A8 8 0 0 1 4 13.82V3.24l31.58 15.78A8 8 0 0 1 39.7 24h2.06zM78 24l2.47-1.24A10 10 0 0 0 86 13.82V0l-2 1-32.47 16.24A10 10 0 0 0 46.24 24h2.06a8 8 0 0 1 4.12-4.98L84 3.24v10.58a8 8 0 0 1-4.42 7.16L73.53 24H78zm0-24L48 15l-2 1V2.18A10 10 0 0 1 46.24 0h2.06a8 8 0 0 0-.3 2.18v10.58L73.53 0H78z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-} */
-/* #styles .features li:nth-child(3),
-.features.patterned li:nth-child(3) {
-  background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23fff' fill-opacity='0.4'%3E%3Cpath d='M50 50c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10s-10-4.477-10-10 4.477-10 10-10zM10 10c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10S0 25.523 0 20s4.477-10 10-10zm10 8c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm40 40c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-} */
-/* #styles .features::after,
-.features.patterned::after {
-  position: absolute;
-  bottom: -4.5em;
-  width: 10ch;
-  padding-top: 3em;
-  transform: rotate(-15deg);
-  transform-origin: bottom right;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 199.1 111.3'%3E%3Cpath fill='%236f6ffd' d='M118 77a77 77 0 00-2-18c-2-4-3-9-3-13a29 29 0 011-12 19 19 0 017-9c4-3 8-4 13-3a14 14 0 018 7 31 31 0 012 5 75 75 0 005 10 47 47 0 002 5 17 17 0 003 3c4 4 8 4 13 0a15 15 0 005-8 37 37 0 001-7l1-11a18 18 0 014-11 2 2 0 000-3l-3-3-2-3a2 2 0 011-2 11 11 0 012-1l19-3c4 0 5 1 3 5l-7 16c-1 3-2 3-5 1l-4-5a1 1 0 00-1 0 9 9 0 00-3 5 23 23 0 00-1 6l-1 11a26 26 0 01-1 7 18 18 0 01-8 10c-5 3-9 3-13 0a20 20 0 01-6-6 68 68 0 01-6-13l-2-4a18 18 0 00-2-4 10 10 0 00-14-2 15 15 0 00-4 4 19 19 0 00-3 9 32 32 0 000 11l2 6a78 78 0 012 27 32 32 0 01-4 15 24 24 0 01-11 9 33 33 0 01-19 3 16 16 0 01-13-9 29 29 0 01-3-11 70 70 0 012-18l2-14a33 33 0 000-14c-1-4-4-7-8-7-7-1-14 1-19 6a34 34 0 00-6 9 59 59 0 00-4 10l-3 12-2 6a26 26 0 01-5 8 17 17 0 01-16 6 26 26 0 01-10-4 7 7 0 01-2-1 2 2 0 010-2 2 2 0 012 0l3 1a22 22 0 0010 3 13 13 0 009-4 22 22 0 005-6 41 41 0 003-8l3-12a59 59 0 015-13 31 31 0 017-9c6-5 14-7 22-5a12 12 0 019 7 21 21 0 011 7 57 57 0 01-2 17 132 132 0 00-2 16 37 37 0 000 13 27 27 0 002 5 13 13 0 0011 8 30 30 0 0016-3 22 22 0 0010-10c3-4 3-9 4-13v-5z'/%3E%3C/svg%3E");
-  background-repeat: no-repeat;
-  background-size: 90%;
-  color: var(--color-primary-alt);
-  font-size: 0.9rem;
-  content: "Grid FTW!";
-} */
 
+/* profile card layout */
 .profile {
   width: 95vw;
   max-width: 80ch;
@@ -1230,21 +1172,29 @@ height: 100px; */
   padding: 1.25rem;
   z-index: 1;
 }
+
+/* profile heading */
 .profile h4 {
   margin: 0;
   color: var(--color-secondary);
   text-align: center;
 }
+
+/* profile inner layout */
 .profile .container {
   display: grid;
   justify-items: center;
   grid-gap: 1rem;
 }
+
+/* profile links */
 .profile .container > a {
   min-height: 2em;
   border: 2px solid currentColor;
   color: var(--color-secondary);
 }
+
+/* profile list reset */
 .profile ul {
   display: flex;
   flex-wrap: wrap;
@@ -1253,22 +1203,32 @@ height: 100px; */
   padding: 0;
   list-style: none;
 }
+
+/* profile list items */
 .profile ul li {
   display: flex;
   padding: 0.45em;
 }
+
+/* profile label text */
 .profile ul li span:nth-child(1) {
   width: auto;
   margin-right: 0.25em;
   font-weight: var(--font-weight-strong);
 }
+
+/* profile value text */
 .profile ul li span:nth-child(2) {
   flex-grow: 1;
   word-break: break-word;
 }
+
+/* profile links inside list */
 .profile ul li span:nth-child(2) a {
   color: inherit;
 }
+
+/* tried want to cry if it doesnt work fixed profile layout for large screens */
 @media (min-width: 180ch) {
   .profile {
     position: fixed;
@@ -1280,29 +1240,22 @@ height: 100px; */
     background-color: var(--color-light);
     box-shadow: 0 2px 5px rgba(58, 0, 255, 0.15);
   }
+
   .profile ul {
     justify-content: unset;
   }
+
   .profile ul li {
     padding: 0;
   }
+
   .profile ul li span:nth-child(1) {
     width: 8ch;
     margin-right: 0;
   }
 }
 
-/* .page-footer {
-  --logomark-height: 2em;
-  --logomark-padding: 0;
-  position: relative;
-  padding: 3rem 1rem;
-  background-color: var(--color-primary);
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='72' viewBox='0 0 36 72'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23d2fbf7' fill-opacity='1'%3E%3Cpath d='M2 6h12L8 18 2 6zm18 36h12l-6 12-6-12z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-  background-repeat: repeat-x;
-  background-position: center -34px;
-  color: var(--color-light);
-} */
+/* footer logo marker */
 .page-footer::before {
   display: inline-grid;
   min-height: var(--logomark-height);
@@ -1319,22 +1272,21 @@ height: 100px; */
   font-size: 3rem;
   content: "S";
 }
+
+/* footer intro text */
 .page-footer p:first-child {
   margin-top: 3rem;
   font-weight: var(--font-weight-strong);
   letter-spacing: 0.03em;
   text-align: center;
 }
+
+/* footer links */
 .page-footer p a {
   color: inherit;
 }
-.page-footer ul {
-  grid-template-columns: repeat(auto-fit, minmax(12ch, auto));
-}
-.page-footer .container > :last-child {
-  margin-bottom: 0;
-}
 
+/* skip link accessibility */
 .skip-link {
   position: absolute;
   top: auto;
@@ -1346,6 +1298,8 @@ height: 100px; */
   font-size: 1.125rem;
   overflow: hidden;
 }
+
+/* skip link focus state */
 .skip-link:focus {
   position: fixed;
   top: 0;
@@ -1355,6 +1309,7 @@ height: 100px; */
   padding: 0.5em;
 }
 
+/* generic link styling (class starts with "link", except codepen) */
 [class^=link]:not(.link-codepen) {
   min-height: 3em;
   background-color: var(--color-primary);
@@ -1362,6 +1317,7 @@ height: 100px; */
   box-shadow: 0.18em 0.18em var(--color-secondary);
 }
 
+/* shared layout for links and profile buttons */
 [class^=link]:not(.link-codepen),
 .profile .container > a {
   display: inline-flex;
@@ -1375,18 +1331,24 @@ height: 100px; */
   text-align: center;
   text-decoration: none;
 }
-[class^=link]:not(.link-codepen):hover, [class^=link]:not(.link-codepen):focus,
+
+/* hover + focus interaction effect */
+[class^=link]:not(.link-codepen):hover,
+[class^=link]:not(.link-codepen):focus,
 .profile .container > a:hover,
 .profile .container > a:focus {
   transform: translate(-0.15em, -0.15em);
   box-shadow: 0.3em 0.3em var(--color-secondary);
 }
+
+/* focus accessibility styling */
 [class^=link]:not(.link-codepen):focus,
 .profile .container > a:focus {
   outline-color: transparent;
   outline-style: solid;
 }
 
+/* footer link override styling */
 .page-footer [class^=link] {
   width: 100%;
   min-height: 2.5em;
@@ -1394,33 +1356,26 @@ height: 100px; */
   color: var(--color-primary);
 }
 
+/* CodePen link styling */
 .link-codepen {
   display: block;
   margin-top: 3rem;
   font-size: var(--font-size-h4);
 }
-/* .link-codepen::before {
-  position: absolute;
-  padding-right: 1.25em;
-  transform: translate(15%, -90%) rotate(-3deg);
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 79.6 187.1'%3E%3Cpath fill='%236f6ffd' d='M12 131l-2 13-3 26a10 10 0 000 2 1 1 0 001 0 24 24 0 002-3 37 37 0 016-8 73 73 0 007-9l24-33 4-5a70 70 0 006-7l15-20a8 8 0 001-1 1 1 0 000-1 16 16 0 00-2-1l-8-3a69 69 0 01-13-6 7 7 0 00-1-1l-16-6-13-7a57 57 0 00-10-4 17 17 0 01-2-1 2 2 0 01-1-4 18 18 0 012-2 93 93 0 0011-13 95 95 0 018-8l10-11a32 32 0 003-4c3-5 7-9 12-13a12 12 0 011-1 1 1 0 012 0 2 2 0 010 2 27 27 0 01-3 3 104 104 0 00-10 12 115 115 0 01-11 13 102 102 0 00-11 13 78 78 0 01-5 7l-2 2a1 1 0 000 1l19 8 9 4 3 2a77 77 0 0113 5 22 22 0 003 2l17 8a8 8 0 011 1 2 2 0 010 2 22 22 0 01-1 3l-11 14a33 33 0 00-2 3 98 98 0 01-10 13l-5 7-23 31a87 87 0 01-7 9 60 60 0 00-6 8l-2 3a1 1 0 000 1l9-4 12-6 10-6 13-7a10 10 0 012 0 2 2 0 012 1 2 2 0 010 3 24 24 0 01-3 1l-8 4-20 11-24 12a19 19 0 01-2 1 2 2 0 01-3-2 10 10 0 010-2l1-7 3-24 3-21a39 39 0 011-5 2 2 0 013-1 2 2 0 011 2v4z'/%3E%3C/svg%3E");
-  background-repeat: no-repeat;
-  background-position: right 130%;
-  background-size: 14%;
-  color: #6f6ffd;
-  font-size: 0.85em;
-  content: "Jump right in";
-} */
 
+/* tried all styles link adjustment */
 .link-allstyles {
   font-size: var(--font-size-h4);
 }
+
+/* tried small screen adjustment for allstyles link */
 @media (max-width: 400px) {
   .link-allstyles {
     margin-left: 6rem;
   }
 }
 
+/* GitHub icon styling */
 .link-github svg {
   width: 1em;
   height: 1em;
@@ -1428,6 +1383,7 @@ height: 100px; */
   fill: currentColor;
 }
 
+/* files section container layout */
 #files .container {
   display: flex;
   flex-direction: column;   
@@ -1436,23 +1392,27 @@ height: 100px; */
   border: #d2fbf7;    
 }
 
+/* spacing for file links */
 #files a {
   margin: 0.5em 0;
 }
 
+/* files paragraph styling */
 #files p {
   border: 2px solid #d2fbf7;
 }
 
+/* ---------------------- */
+/* responsive layout <= 900px */
 @media (max-width: 900px) {
 
-  /* make containers fit screen */
+  /* container width adjustment */
   .container {
     width: 90%;
     margin: 0 auto;
   }
 
-  /* navigation wraps */
+  /* navigation wrapping */
   nav ul {
     display: flex;
     flex-wrap: wrap;
@@ -1460,50 +1420,51 @@ height: 100px; */
     gap: 0.5rem;
   }
 
-  /* your list boxes shrink */
+  /* shrink about section tiles */
   #about section:nth-child(2) ul li {
     width: 120px;
     height: 90px;
     font-size: 10px;
   }
 
-  /* headings scale down */
+  /* scale headings down */
   h1 { font-size: 2rem; }
   h2 { font-size: 1.5rem; }
   h3 { font-size: 1.2rem; }
 
-  /* fix absolute elements center instead */
+  /* reset guideline link positioning */
   .link-guidelines {
     position: static;
     display: inline-block;
     margin-top: 1rem;
   }
 
-  /* footer links stack nicer */
+  /* file container stacking */
   #files .container {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-
 }
 
+/* ---------------------- */
+/* responsive layout <= 600px */
 @media (max-width: 600px) {
 
-  /* stack EVERYTHING */
+  /* stack navigation vertically */
   nav ul {
     flex-direction: column;
     align-items: center;
   }
 
-  /* remove fragile absolute positioning */
+  /* force headings to reset positioning */
   h3 {
     position: static !important;
     transform: none !important;
     text-align: center;
   }
 
-  /* make your image boxes smaller */
+  /* smaller about tiles */
   #about section:nth-child(2) ul li {
     width: 100px;
     height: 80px;
@@ -1511,29 +1472,28 @@ height: 100px; */
     padding: 5px;
   }
 
-  /* reduce spacing */
+  /* reduce section spacing */
   section {
     padding: 1rem 0;
   }
 
-  /* text readability */
+  /* improve paragraph readability */
   p {
     font-size: 0.9rem;
     line-height: 1.4;
   }
 
-  /* fix giant positioned backgrounds */
+  /* fix background scaling */
   #guidelines {
     background-position: center;
     background-size: contain;
   }
 
-  /* footer buttons full width */
+  /* full width file links */
   #files a {
     display: block;
     width: 100%;
     text-align: center;
     margin: 0.5rem 0;
   }
-
 }
