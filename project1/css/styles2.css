@@ -1472,7 +1472,7 @@ height: 100px; */
   h2 { font-size: 1.5rem; }
   h3 { font-size: 1.2rem; }
 
-  /* fix absolute elements (center instead) */
+  /* fix absolute elements center instead */
   .link-guidelines {
     position: static;
     display: inline-block;
